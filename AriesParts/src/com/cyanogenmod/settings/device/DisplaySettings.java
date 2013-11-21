@@ -27,6 +27,14 @@ public class DisplaySettings extends PreferenceActivity  {
 
     private BroadcastReceiver mHeadsetReceiver = new BroadcastReceiver() {
 
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            int state = intent.getIntExtra("state", 0);
+            updateTvOutEnable(state != 0);
+        }
+
+    };
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +43,5 @@ public class DisplaySettings extends PreferenceActivity  {
         mMdnie = (ListPreference) findPreference(KEY_MDNIE);
         mMdnie.setEnabled(Mdnie.isSupported());
         mMdnie.setOnPreferenceChangeListener(new Mdnie());
-	}
-	
+
 }
