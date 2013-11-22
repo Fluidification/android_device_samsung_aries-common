@@ -18,6 +18,8 @@ public class DisplaySettings extends PreferenceActivity  {
     public static final String KEY_DOCK_AUDIO_CATEGORY = "category_dock_audio";
 
     private ListPreference mMdnie;
+    
+    private BroadcastReceiver mHeadsetReceiver = new BroadcastReceiver() {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
