@@ -28,6 +28,6 @@
 
     <!-- Invalid IMEI -->
     <string name="imei_not_sane_title">Warning!</string>
-    <string name="imei_not_sane_message">A problem was detected with your device. Your device IMEI number is invalid. An invalid IMEI number could cause network issues including the inability to call emergency numbers.</string>
+    <string name="imei_not_sane_message">Your IMEI is INSANE!</string>
     <string name="imei_not_sane_ok">OK</string>
 </resources>

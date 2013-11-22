@@ -12,4 +12,5 @@
 	        android:entryValues="@array/mdnie_entries_values"
 	        android:defaultValue="6" />
 	</PreferenceCategory>
+
 </PreferenceScreen>
